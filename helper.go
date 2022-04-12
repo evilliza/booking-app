@@ -4,7 +4,6 @@ import (
 	"strings"
 )
 
-// var Mvar = "global var"
 func validateUserInput(firstName, lastName, email string, userTickets, remainingTickets uint8) (bool, bool, bool) {
 	isValidName := len(firstName) >= 2 && len(lastName) >= 2
 	isValidEmail := strings.Contains(email, "@")
